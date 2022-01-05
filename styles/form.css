@@ -1,0 +1,82 @@
+.tourist-attraction-form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.tourist-attraction-form-inputs-wrapper {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.tourist-attraction-form-input-image {
+    max-width: 288px;
+    max-height: 212px;
+    padding: 114px 94px;
+    border-radius: 8px;
+    border: 2px solid var(--gray-100);
+}
+
+.tourist-attraction-form-input-title {
+    max-width: 326px;
+    max-height: 54px;
+    border-radius: 8px;
+    padding: 15px; 
+    border: 2px solid var(--gray-100);
+}
+
+.tourist-attraction-form-input-description {
+    width: 100%;
+    padding: 40px 16px 74px;
+    border-radius: 8px;
+    border: 2px solid var(--gray-100);
+}
+
+.tourist-attraction-form-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tourist-attraction-form-button-style {
+    padding:16px 20px;
+    border-radius: 8px;
+    background: var(--salmon-300);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.2s linear;
+}
+
+.tourist-attraction-form-button-style:hover {
+    background: var(--salmon-500);
+}
+
+.tourist-attraction-form-button-style:active {
+    background: var(--salmon-100);
+}
+
+@media screen and (max-width: 650px) {
+    .tourist-attraction-form-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .tourist-attraction-form-input-title {
+        max-width: 343px;
+        padding: 16px; 
+    }
+
+    .tourist-attraction-form-input-description {
+        max-width: 343px;
+        padding: 40px 16px 74px;
+    }
+
+    .tourist-attraction-form-button {
+        justify-content: flex-start;
+    }
+
+    .tourist-attraction-form-button-style {
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>challenge-tourist-attractions</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css" />
+    </head>
+    <body>
+        <main>
+            <section class="tourist-attraction-container">
+                <h2 class="tourist-attraction-title">Adicionar Ponto Turístico</h2>
+                
+                <form class="tourist-attraction-form">
+                    <div class="tourist-attraction-form-inputs">
+                        <input class="tourist-attraction-form-input-image" type="url" placeholder="Imagem URL" name="atraction-image" />
+                        <div class="tourist-attraction-form-inputs-wrapper">
+                            <input class="tourist-attraction-form-input-title" type="text" placeholder="Título" name="atraction-title" />
+                            <input class="tourist-attraction-form-input-description" type="text" placeholder="Descrição" name="atraction-description" />
+                        </div>
+                    </div>
+
+                    <div class="tourist-attraction-form-button">
+                        <button class="tourist-attraction-form-button-style" type="submit">Adicionar</button>
+                    </div> 
+                </form>
+
+            </section>
+            
+            <section class="tourist-attractions-cards">
+                <h2 class="tourist-attraction-render-title">Pontos Turísticos</h2>
+                <div class="atraction-items"></div>
+            </section>
+        </main>
+        
+        <script src="scripts/app.js"></script>
+    </body>
+</html>

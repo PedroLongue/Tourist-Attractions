@@ -1,0 +1,20 @@
+@import "global.css";
+@import "variables.css";
+@import "form.css";
+@import "renderCards.css";
+
+.tourist-attraction-container {
+    max-width: 880px;
+    padding: 14px 58px;
+}
+
+.tourist-attraction-title {
+    margin: 32px 0;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 405px) {
+    .tourist-attraction-container {
+        padding: 10px 10px;
+    }
+}

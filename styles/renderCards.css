@@ -1,0 +1,71 @@
+.tourist-attraction-render-title {
+    font-size: 32px;
+    padding: 14px 58px;
+}
+
+.atraction-items {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0 16px 0 ;
+}
+
+.atraction-items-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    width: 576px; 
+}
+
+.atraction-items-card-image-style {
+    width: 288px;
+    height: 212px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.atraction-items-card-text {
+    padding: 24px; 
+}
+
+.atraction-items-card-text-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1190px) {
+    .atraction-items {
+        grid-template-columns: repeat(1, max-content);
+    }
+}
+
+@media screen and (max-width: 719px){
+    .atraction-items {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .atraction-items-card {
+        flex-direction: column;
+    }
+
+    .atraction-items-card,
+    .atraction-items-card-image-style {
+        width: 343px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .tourist-attraction-render-title {
+        font-size: 32px;
+        padding: 10px 10px;
+    }  
+     
+    .atraction-items-card {
+        margin-left: 10px;
+    }
+}
